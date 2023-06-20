@@ -1,10 +1,7 @@
 <template >
     <div class="row justify-content-center " v-if="elementsList.length === 0">
-        <div class="col-12 text-center">
-          <h1 style="color: black">
-            loading comiscCards...
-          </h1>
-
+        <div class="col-12 ">
+            <LoaderComicsCards />
         </div>
         
     </div>
@@ -18,7 +15,9 @@
 
 <script>
 import CardComic from './CardComic.vue';
+import LoaderComicsCards from './LoaderComicsCards.vue';
 import axios from 'axios';
+
 
 export default {
     name:'CardsList',
@@ -30,6 +29,7 @@ export default {
     },
     components:{
         CardComic,
+        LoaderComicsCards,
         
     },
     created(){
