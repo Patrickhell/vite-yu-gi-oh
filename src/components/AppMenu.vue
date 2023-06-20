@@ -1,11 +1,11 @@
 <template >
     <main>
         <div class="container1">
-            <div class="card " style="border-radius: 0">
+            <div class="card m-auto" style="border-radius: 0; width: 1300px; ">
               <h2 class="card-header">Yu-Gi-Oh! API</h2>
               <div class="card-body">
                 <div class="container2">
-                  <div class="card text-white p-4 " style="border-radius: 0 ">
+                  <div class="card text-white py-5 m-auto " style="border-radius: 0 ; width: 1000px; border: 0;">
                     <p class="card-header" style="background-color:black;border-radius: 0; height: 50px;">Found 39 cards</p>
                     <div class="card-body p-0" style="background-color: white; " >
                         <CardsList />
@@ -35,9 +35,7 @@ export default {
 </script>
 <style lang="scss">
 .container1{
-    width: 1000px;
     margin: 0 auto;
-    padding-top:1rem;
 }
 div.card-body{
     background-color:#d48f38 ;
@@ -46,9 +44,10 @@ div.card-body{
 }
 
 .container2{
-    width: 900px;
+    width: 1100px;
     background: white;
-    margin:0 auto
+    margin:0 auto;
+    margin-top: 3rem
   
     
 }

@@ -32,6 +32,7 @@ export default {
 .card{
     width: calc((100% / 5) - .8rem);
     margin: .4rem ;
+    object-fit: cover;
 }
   
 </style>
